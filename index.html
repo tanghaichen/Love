@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<p>tang</p>
+<p> See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults</p>
+<p>My post list:</p>
+<ul>
+   {% for post in site.posts %}
+       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+   {% endfor %}
+</ul>
